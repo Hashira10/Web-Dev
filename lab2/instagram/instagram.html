@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link href="freestylo.css" rel=stylesheet>
+    <style>
+        body{
+            background-color: rgb(250,250,250);
+        }
+        div{
+            display: block;
+        }
+
+        #upper_box{
+
+        }
+        
+
+        #logo_form{ /* Facebook logo and form */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40em;
+
+
+            padding: 20px 0 0 0;
+
+
+            font-family: Helvetica;
+            font-size: 12pt;
+        }
+
+        .form_text{ /*Form*/
+            width: fit-content;
+            text-align: center;
+
+            color: rgb(38,38,38);
+            font-size: 13px;
+            line-height: 18px;
+            margin: 10px 20px 10px 20px;
+        }
+
+        #logo_box{ /* Facebook logo box*/
+            width: 420px;
+            height: 600px;
+            position: relative;
+            z-index: 0;
+        }
+
+        #logo_box img{
+            position: absolute;
+            z-index: 1;
+        }
+
+        #insidephone{
+            z-index: 2;
+            position: absolute;
+            margin: 100px 0 0 151px;
+            width: 240px;
+            height: 427px;
+        }
+
+        .forma_box{ /* box of register*/
+            color: #8e8e8e;
+            width: 350px;
+            height: fit-content;
+            padding: 30px 0 20px 0;
+            border: 1px solid rgb(219,219,219);
+            border-radius: 1px;
+            background-color: white;
+
+            align-items: inherit;
+
+        }
+
+        #ILI {
+            height: fit-content;
+
+            display: inline-flex;
+            align-items: center;
+        }
+
+        #ILI hr{
+
+            width: 90px;
+            border: none;
+            border-top: 1px solid #8e8e8e;
+            opacity: 90%;
+
+
+        }
+
+        #ILI p{
+            font-size: 13px;
+            font-weight: 600;
+            font-family: 'Segoe UI';
+
+            margin: 0 20px;
+        }
+
+        /*********************************INSIDE FORM*********************************************/
+        button{
+            border: none;
+            color: white;
+            background-color: dodgerblue;
+            font-weight: bold;
+            font-size: 12px;
+            border-radius: 5px;
+            width: 268px;
+            height: 30px;
+            margin: 15px 0 13px 0;
+            cursor: pointer;
+
+        }
+
+        input[type] {
+            padding: 9px 0 7px 8px;
+            margin: 6px 0 0 0;
+            border: 1px lightgray solid;
+            border-radius: 3px;
+            width: 258px;
+            font-size: 12px;
+            height: 20px;
+            background-color: whitesmoke;
+
+        }
+
+        input[type]:focus {
+            outline: none;
+            border-color: #737373;
+        }
+
+        .facebook{
+            font-size: 14px;
+            color: #385185;
+
+            margin: 15px 0 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        
+        /* links */
+        a{
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* selected link */
+        a:active {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* ------------MAIN BOTTOM------------*/
+        #lower_box {
+            background-color: inherit;
+            width: inherit;
+            height: fit-content;
+            color: #737373;
+            padding: 40px 0 40px 0;
+
+            text-align: center;
+
+            color: rgb(142,142,142);
+
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 400;
+            font-family: "Helvetica";
+        }
+
+        .lang{
+            width: 925px;
+
+            display: inline-flex;
+
+            margin-bottom: 20px;
+        }
+
+        ul{
+            list-style-type: none;
+
+            line-height: 25px;
+            padding: 0;
+
+        }
+
+        li {
+            display: inline;
+            padding: 0 12px 0 0;
+        }
+
+        #add_lang
+        {
+            display: block;
+
+        }
+        #add_lang p{
+            font-size: 12px;
+            font-weight: 400;
+            display: inline;
+        }
+
+        /*************************SELECT***************************/
+
+        select{
+            display: inline;
+            border: none;
+
+
+            color: inherit;
+            background-color: inherit;
+            font-size: 12px;
+
+
+            width: 70px;
+        }
+
+        select[type=submit]{
+            border: 0;
+        }
+
+    </style>
+</head>
+<body>
+<div id="upper_box"> <!--  -->
+    <div id="logo_form"> <!--  -->
+
+        <div class="form_text">
+            <div class="forma_box facebook" style="padding: 20px 0; margin-top: 10px">
+                <p style="font-size: 14px; font-family: 'Segoe UI'">У вас ещё нет аккаунта? <a href="" style="color: dodgerblue; font-weight: 500; font-family: 'Segoe UI'">Зарегистрироваться</a></p>
+            </div>
+            <p>Установите приложение.</p>
+            <div style="margin-top: 20px">
+                <a href="https://apps.apple.com/ru/app/instagram/id389801252" target="_blank" style="margin-right: 5px"><img src="ios.png" height=40px"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=ru&gl=US" target="_blank"><img src="android.png" height="40px"></a>
+            </div>
+            <div class="forma_box">
+                <img src="logo.png">
+                <forms>
+                    <input style="margin: 30px 0 0 0;" type="text" placeholder="Телефон, имя пользователя или эл. адрес">
+                    <input type="password" placeholder="Пароль">
+                    <div><button>Войти</button></div>
+                    <div id="ILI"><hr><p> ИЛИ </p><hr></div>
+                    <div class="facebook">
+                        <img src="facebook.png" style="margin-right: 8px;">
+                        <a href="" style="font-weight: 500; font-family: 'Segoe UI'">Войти через Facebook</a> </div>
+                    <a href="" style="font-size: 12px; color: rgb(0,55,107)">Забыли пароль?</a>
+                </forms>
+            </div>
+
+        </div>
+        <div id="logo_box" >
+            <img src="img.png">
+            <img src="insidephone.jpg" id="insidephone">
+        </div>
+    </div>
+</div>
+<div id="lower_box">
+    <div class="lang">
+        <ul>
+            <li><a href="">Meta</a></li>
+            <li><a href="">Информация</a></li>
+            <li><a href="">Блог</a></li>
+            <li><a href="">Вакансии</a></li>
+            <li><a href="">Помощь</a></li>
+            <li><a href="">API</a></li>
+            <li><a href="">Конфиденциальность</a></li>
+            <li><a href="">Условия</a></li>
+            <li><a href="">Популярные акаунты</a></li>
+            <li><a href="">Хэштеги</a></li>
+            <li><a href="">Места</a></li>
+            <li><a href=""></a>Instagram Lite</li>
+            <li><a href="">Красота</a></li>
+            <li><a href="">Танцы</a></li>
+            <li><a href="">Фитнес</a></li>
+            <li><a href="">Еда и напитки</a></li>
+            <li><a href="">Дом и сад</a></li>
+            <li><a href="">Музыка</a></li>
+            <li><a href="">Изобразительное искусство</a></li>
+        </ul>
+    </div>
+
+    <div id="add_lang">
+        <select>
+            <option value="af">Русский</option>
+            <option value="cs">Čeština</option>
+            <option value="da">Dansk</option>
+            <option value="de">Deutsch</option>
+            <option value="el">Ελληνικά</option>
+            <option value="en">English</option>
+            <option value="en-gb">English (UK)</option>
+            <option value="es">Español (España)</option>
+            <option value="es-la">Español</option>
+            <option value="fi">Suomi</option>
+            <option value="fr">Français</option>
+            <option value="id">Bahasa Indonesia</option>
+            <option value="it">Italiano</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="ms">Bahasa Melayu</option>
+            <option value="nb">Norsk</option>
+            <option value="nl">Nederlands</option>
+            <option value="pl">Polski</option>
+            <option value="pt-br">Português (Brasil)</option>
+            <option value="pt">Português (Portugal)</option>
+            <option value="ru">Afrikaans</option>
+            <option value="sv">Svenska</option>
+            <option value="th">ภาษาไทย</option>
+            <option value="tl">Filipino</option>
+            <option value="tr">Türkçe</option>
+            <option value="zh-cn">中文(简体)</option>
+            <option value="zh-tw">中文(台灣)</option>
+            <option value="bn">বাংলা</option>
+            <option value="gu">ગુજરાતી</option>
+            <option value="hi">हिन्दी</option>
+            <option value="hr">Hrvatski</option>
+            <option value="hu">Magyar</option>
+            <option value="kn">ಕನ್ನಡ</option>
+            <option value="ml">മലയാളം</option>
+            <option value="mr">मराठी</option>
+            <option value="ne">नेपाली</option>
+            <option value="pa">ਪੰਜਾਬੀ</option>
+            <option value="si">සිංහල</option>
+            <option value="sk">Slovenčina</option>
+            <option value="ta">தமிழ்</option>
+            <option value="te">తెలుగు</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="zh-hk">中文(香港)</option>
+            <option value="bg">Български</option>
+            <option value="fr-ca">Français (Canada)</option>
+            <option value="ro">Română</option>
+            <option value="sr">Српски</option>
+            <option value="uk">Українська</option>
+        </select>
+        <p style="">© 2022 Instagram from Meta</p>
+    </div>
+</div>
+
+</body>
+</html>
