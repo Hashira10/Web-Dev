@@ -1,0 +1,93 @@
+<!-- if (a string with zero)
+Will alert be shown?
+
+if ("0") {
+     alert( 'Hello' );
+ } 
+Yes, "0" = true -->
+
+
+<!-- The name of JavaScript -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    'use strict';
+
+    let value = prompt('What is the "official" name of JavaScript?', '');
+
+    if (value == 'ECMAScript') {
+      alert('Right!');
+    } 
+    else {
+      alert("You don't know? ECMAScript!");
+    }
+  </script>
+
+
+</body>
+
+</html>
+
+
+
+<!-- Show the sign -->
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    'use strict';
+    let value1 = prompt('Type a number', 0);
+
+    if (value > 0) alert( 1 );
+    
+    else if (value < 0) alert( -1 );
+     
+    else alert( 0 );
+    
+  </script>
+
+
+</body>
+
+</html>
+
+<!-- Rewrite 'if' into '?' -->
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    'use strict';
+    let result = (a + b < 4) ? 'Below' : 'Over';
+  </script>
+
+
+</body>
+
+</html>
+
+
+
+<!-- Rewrite 'if..else' into '?' -->
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    'use strict';
+    let message = (login == 'Employee') ? 'Hello' :
+    (login == 'Director') ? 'Greetings' :
+    (login == '') ? 'No login' :
+  '';
+  </script>
+
+
+</body>
+
+</html>
