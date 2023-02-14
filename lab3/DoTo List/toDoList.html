@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>ToDo List</title>
+    <style>
+        #toDo{
+            background:rgb(43, 46, 49);
+            padding:10px 40px;
+            color:rgb(212, 212, 212);
+            text-align:left;
+            font-family: system-ui;
+        }
+        header{
+            font-family: system-ui;
+            font-size: 1.6em;
+            text-align:start;
+        }
+        #main-toDo{
+            margin-bottom:9px;
+            margin-left:199px;
+        }
+        input[type = "text"]{
+            color:rgb(131, 131, 131);
+            padding: 4px 250px 5px 12px;
+            margin-left:260px;
+            position: left;
+            
+        }
+        .submit{
+            padding: 7px 10px;
+            border-radius: 6%;
+            margin-left: 1%;
+            color:rgb(255, 255, 255);
+            background-color: rgb(45, 115, 175);
+            text-align: center;
+            font-family: system-ui;
+            font-size: 10px;
+            cursor: pointer;
+            
+        }
+        .submit:hover{
+            background-color: rgb(71, 142, 203);
+            color:#ffffff;
+        }
+
+        ul li{
+            cursor: pointer;
+            position: relative;
+            padding: 12px 8px 12px 40px;
+            background: #eee;
+            font-size: 14px;
+            font-family: system-ui;
+        }
+        ul li.checked{
+            background: #616060;
+            text-decoration: line-through;
+        }
+        ul li.checked::before{
+            content: "";
+            position: absolute;
+            border-color: rgb(66, 65, 65);
+            border-style: solid;
+            border-width: 0 2px 2px 0;
+            top: 10px;
+            left: 16px;
+            height: 15px;
+            width: 7px;
+        }
+    </style>
+    <body>
+        <p id = "toDo">ToDo List</p>
+        <header>
+            
+            <p id = "main-toDo">ToDo List</p>
+            <input type="text" placeholder="New Task"></input>
+            <span class="submit" id="add_button">Add</span>
+        </header>
+
+        <ul id = "myUl">
+            <li>1</li>
+            <li>2</li>
+        </ul>
+        <script src="script.js"></script>
+        
+
+    </body>
+    
+</head>
