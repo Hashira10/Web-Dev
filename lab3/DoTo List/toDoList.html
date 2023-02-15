@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/29ee0bc57e.js">
+    </script>
     <title>ToDo List</title>
+
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         #toDo{
             background:rgb(43, 46, 49);
             padding:10px 40px;
@@ -15,74 +23,52 @@
             font-size: 1.6em;
             text-align:start;
         }
-        #main-toDo{
-            margin-bottom:9px;
+        #head{
+            margin-bottom:11px;
             margin-left:199px;
+            margin-top: 41px;
         }
-        input[type = "text"]{
+
+        input {
             color:rgb(131, 131, 131);
-            padding: 4px 250px 5px 12px;
             margin-left:260px;
-            position: left;
-            
+            margin-bottom: 30px;
+            padding: 4px 250px 5px 12px;
+            font-size: 14px;
+            font-family: system-ui;
+            outline:none;
         }
-        .submit{
-            padding: 7px 10px;
+
+        .addBtn {
+            padding-left:12px;
+            padding-right: 12px;
+            padding-top: 9px;
+            padding-bottom: 8px;
             border-radius: 6%;
             margin-left: 1%;
             color:rgb(255, 255, 255);
             background-color: rgb(45, 115, 175);
             text-align: center;
             font-family: system-ui;
-            font-size: 10px;
+            font-size: 12px;
             cursor: pointer;
-            
-        }
-        .submit:hover{
-            background-color: rgb(71, 142, 203);
-            color:#ffffff;
         }
 
-        ul li{
-            cursor: pointer;
-            position: relative;
-            padding: 12px 8px 12px 40px;
-            background: #eee;
-            font-size: 14px;
-            font-family: system-ui;
-        }
-        ul li.checked{
-            background: #616060;
-            text-decoration: line-through;
-        }
-        ul li.checked::before{
-            content: "";
-            position: absolute;
-            border-color: rgb(66, 65, 65);
-            border-style: solid;
-            border-width: 0 2px 2px 0;
-            top: 10px;
-            left: 16px;
-            height: 15px;
-            width: 7px;
+        .addBtn:hover {
+            background-color: rgb(71, 142, 203);
         }
     </style>
-    <body>
-        <p id = "toDo">ToDo List</p>
-        <header>
-            
-            <p id = "main-toDo">ToDo List</p>
-            <input type="text" placeholder="New Task"></input>
-            <span class="submit" id="add_button">Add</span>
-        </header>
+  </head>
+  <body>
+    <p id = "toDo">ToDo List</p>
+    <header>
+      <p id = "head">To Do List</p>
+      <input type="text" id="myInput" placeholder="New Task" />
+      <span class="addBtn" id="add_button">Add</span>
+    </header>
+    <ul id="myUL">
+      
+    </ul>
+    <script src="class.js"></script>
+</body>
 
-        <ul id = "myUl">
-            <li>1</li>
-            <li>2</li>
-        </ul>
-        <script src="script.js"></script>
-        
-
-    </body>
-    
-</head>
