@@ -184,8 +184,13 @@ select{
   width: 1020px;
   height: 40px;
 }
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+.like{
+  color:red;
+  background-color: #f1f1f1;
+  font-size: 20px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+.delete{
+  margin-left:10px;
+}
