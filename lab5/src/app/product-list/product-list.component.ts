@@ -13,7 +13,7 @@ import {ProductService} from "../product-service.service";
 })
 export class ProductListComponent {
   value: string | undefined;
-  products: Product[] = [];
+  product = [...products];
   selectedFilter : string = 'None';
   filteredItems = [...products];
   share() {
@@ -25,10 +25,10 @@ export class ProductListComponent {
   }
   filterByCategory() {
     if(this.selectedFilter == 'None') {
-      this.filteredItems = [...products];
+      this.filteredItems = this.product;
     }
     else {
-      this.filteredItems = [...products].filter(p => p.category === this.selectedFilter);
+      this.filteredItems = this.product.filter(p => p.category === this.selectedFilter);
     }
   }
 
@@ -37,19 +37,8 @@ export class ProductListComponent {
     this.filterByCategory();
   }
 
-  incrementLikes(id : number) {
-    products.filter(p => p.id === id).map(p => p.likes += 1)
-  }
-
   deleteProduct(id : number) {
-    this.products = this.products.filter(p => p.id !== id);
+    this.product = this.product.filter(p => p.id !== id);
     this.filterByCategory();
   }
 }
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
