@@ -1,5 +1,7 @@
 export interface Product {
   id: number;
+  likes: number;
+  category: string;
   name: string;
   price: number;
   description: string;
@@ -17,6 +19,8 @@ export interface Product {
 export const products = [
   {
     id: 1,
+    likes: 1,
+    category: "E-book",
     name: 'ONYX BOOX Nova Air2',
     price: 185000,
     description: 'E-book ONYX BOOX Nova Air2 white,built-in backlight',
@@ -35,6 +39,8 @@ export const products = [
   },
   {
     id: 2,
+    likes: 1,
+    category: "E-book",
     name: 'ONYX BOOX NOTE AIR 2 PLUS',
     price: 255000,
     description: 'E-book ONYX BOOX NOTE AIR 2 PLUS green ,built-in backlight',
@@ -54,6 +60,8 @@ export const products = [
 
   {
     id: 3,
+    likes: 1,
+    category: "E-book",
     name: 'ONYX VASCO DA GAMA',
     price: 70993,
     description: 'E-book ONYX VASCO DA GAMA 4 black ,built-in backlight',
@@ -73,6 +81,8 @@ export const products = [
   },
   {
     id: 4,
+    likes: 1,
+    category: "E-book",
     name: 'ONYX BOOX NOTE AIR 2 PLUS',
     price: 179990,
     description: 'E-book ONYX BOOX Poke 3 black,built-in backlight',
@@ -92,6 +102,8 @@ export const products = [
   },
   {
     id: 5,
+    likes: 1,
+    category: "E-book",
     name: 'ONYX BOOX Poke 4 Lite',
     price: 85000,
     description: 'ONYX BOOX Poke 4 Lite is a compact reader with a 6—inch E Ink Carta screen, with MOON Light 2 backlight and touch control. The model is made in a thin lightweight case, its weight is only 150 grams. The reader is based on a modern high-performance processor and has 2 GB of RAM and 16 GB of internal memory. The built-in Wi-Fi module allows you to access the Internet and download books directly to your device, and Bluetooth allows you to connect headphones, speakers, keyboards and much more.',
@@ -110,6 +122,8 @@ export const products = [
   },
   {
     id: 6,
+    likes: 1,
+    category: "E-book",
     name: 'PocketBook 606 PB606-D-CIS',
     price: 74990,
     description: 'PocketBook 606 is a new entry–level model with a 6-inch HD screen of the latest generation E Ink Carta and a record low weight, only 145 g. The reader is surprisingly easy to operate, safe for vision, supports 20 book and graphic formats and is equipped with a memory card slot. In short, PocketBook 606 has everything you need for comfortable electronic reading.',
@@ -128,6 +142,8 @@ export const products = [
   },
   {
     id: 7,
+    likes: 1,
+    category: "E-book",
     name: 'Ritmix RBK-617',
     price: 37228,
     description: 'E-book Ritmix RBK-617 Black, built-in backlight',
@@ -146,6 +162,8 @@ export const products = [
   },
   {
     id: 8,
+    likes: 1,
+    category: "E-book",
     name: 'POCKET BOOK PB741-N-CIS',
     price: 153990,
     description: 'The worlds first large-format 7.8-inch E Ink color screen reader. Previously, all E Ink Kaleido color screen readers (E Ink Kaleido Plus) were 6-inch, and this model is 7.8-inch. The larger the diagonal of the screen, the more comfortable it is when studying specific content. Literature with pictures, the Internet in color, business publications with graphs and diagrams, comics – for all this, PocketBook 741 Color fits perfectly. A color reader, as convenient as possible for textbooks, business literature, comics.',
@@ -164,6 +182,8 @@ export const products = [
   },
   {
     id: 9,
+    likes: 1,
+    category: "E-book",
     name: 'Amazon Kindle PaperWhite 2018 8Gb',
     price: 99940,
     description: 'The Amazon Kindle PaperWhite 2018 e–book is an updated version of the popular Amazon e-book. The thinnest and lightest reader of the Kindle Paperwhite line. The new model received a 6-inch E-Ink Carta screen with a resolution of 1440 x 1080. The display resembles real paper and does not glare even in the bright sun. Thanks to the built-in adjustable light, you can enjoy reading not only during the day, but also at night. The built-in memory is 8 GB. Amazon Kindle PaperWhite 2018 supports audiobooks. Using Bluetooth, you can connect headphones and listen to audiobooks through the headset. One battery charge for daily reading lasts for several weeks.',
@@ -182,6 +202,8 @@ export const products = [
   },
   {
     id: 10,
+    likes: 1,
+    category: 'E-books',
     name: 'Amazon Kindle 11',
     price: 73900,
     description: 'Amazon Kindle E-book 11 Black, built-in backlight',
@@ -199,3 +221,4 @@ export const products = [
     star5: "fa fa-star",
   },
 ];
+
