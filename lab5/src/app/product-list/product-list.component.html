@@ -40,7 +40,6 @@
     </a>
   </div>
 
-
   <p *ngIf="product.description">Description: {{ product.description }}</p>
   <div class = "checked">
   <span class={{product.star1}}></span>
@@ -49,17 +48,26 @@
   <span class={{product.star4}}></span>
   <span class={{product.star5}}></span>
   </div>
+    <app-product-items [product]="product"  class = "like"></app-product-items>
+
 
   <div>
     <a href = "https://api.whatsapp.com/send/?text={{ product.kaspi_link }}&type=custom_url&app_absent=0">
       <button type="submit">Share</button>
     </a>
+
+    <button  type="button" (click)="deleteProduct(product.id)" class = "delete">
+      delete
+    </button>
+
   </div>
 
-
-  <app-product-alerts [product]="product" (notify)="onNotify()">
+    <app-product-alerts [product]="product" (notify)="onNotify()">
   </app-product-alerts>
+
+
 </div>
+
 </div>
 
 <!--
