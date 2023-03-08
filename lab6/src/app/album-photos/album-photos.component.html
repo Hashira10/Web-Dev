@@ -1,0 +1,15 @@
+
+
+  <div *ngFor="let photo of photos">
+    <h1>Post photos #{{photo.id}}</h1>
+
+    <h2>{{photo.title}}</h2>
+    <p>{{photo.id}} {{photo.title}}</p>
+    <img [src]="photo.thumbnailUrl" alt="icon">
+    <br>
+    <img [src]="photo.url" alt="photo">
+  </div>
+
+<button (click)="goBack()">Return back</button>
+
+
