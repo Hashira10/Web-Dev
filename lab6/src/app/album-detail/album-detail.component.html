@@ -1,9 +1,21 @@
 <div *ngIf="loaded">
-  <h1>Post detail #{{post.id}}</h1>
+  <h1>Post photos #{{album.id}}</h1>
 
-  <h2>{{post.title}}</h2>
+  <h2>{{album.title}}</h2>
 
-  <p>{{post.body}}</p>
+
+
+  <fieldset>
+    <input type="text" [(ngModel)]="newTitle"><br/>
+    <button (click)="saveAlbum()">Save</button>
+  </fieldset>
+
+  <a routerLink="/albums/{{album.id}}/photos">
+    Photos
+  </a>
+
+
 </div>
+<button (click)="goBack()">Return back</button>
 
 <h3 *ngIf="!loaded">Post is loading...</h3>
