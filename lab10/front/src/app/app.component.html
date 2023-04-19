@@ -1,0 +1,14 @@
+<app-navigation-bar></app-navigation-bar>
+<div class="row">
+<div>
+    <a *ngFor="let category of categories" [routerLink]="['/companies', category.id]">
+    <span class="category-icon">
+      <i class="fas fa-tag"></i>
+    </span>
+      <span class="category-name">{{ category.name }}<br></span>
+    </a>
+</div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

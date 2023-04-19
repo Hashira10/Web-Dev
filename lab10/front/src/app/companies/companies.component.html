@@ -1,0 +1,15 @@
+<div class="main-container">
+  <div class="vouchers-list-header">
+    <span class="count">
+      {{vacancies.length}} Vouchers
+    </span>
+  </div>
+  <div class="vouchers-list">
+    <div *ngFor="let vacancy of vacancies" class="voucher">
+      <a [routerLink]="['/vouchers', vacancy.id]">
+        <p class="title">{{vacancy.name}}</p>
+        <p class="Salary">Salary: {{vacancy.salary}}</p>
+      </a>
+    </div>
+  </div>
+</div>
